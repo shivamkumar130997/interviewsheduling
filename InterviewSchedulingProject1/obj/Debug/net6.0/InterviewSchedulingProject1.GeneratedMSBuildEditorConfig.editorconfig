@@ -1,0 +1,88 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = InterviewSchedulingProject1
+build_property.RootNamespace = InterviewSchedulingProject1
+build_property.ProjectDir = C:\Shivam_All_Data\Shivam_Projects\InterviewSchedulingProject1 - Copy\InterviewSchedulingProject1\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Shivam_All_Data\Shivam_Projects\InterviewSchedulingProject1 - Copy\InterviewSchedulingProject1
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Shivam_All_Data/Shivam_Projects/InterviewSchedulingProject1 - Copy/InterviewSchedulingProject1/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Shivam_All_Data/Shivam_Projects/InterviewSchedulingProject1 - Copy/InterviewSchedulingProject1/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Shivam_All_Data/Shivam_Projects/InterviewSchedulingProject1 - Copy/InterviewSchedulingProject1/Views/ISP/AdminDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSVNQXEFkbWluRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Shivam_All_Data/Shivam_Projects/InterviewSchedulingProject1 - Copy/InterviewSchedulingProject1/Views/ISP/AdminEditCandidate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSVNQXEFkbWluRWRpdENhbmRpZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Shivam_All_Data/Shivam_Projects/InterviewSchedulingProject1 - Copy/InterviewSchedulingProject1/Views/ISP/CandidateDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSVNQXENhbmRpZGF0ZURhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Shivam_All_Data/Shivam_Projects/InterviewSchedulingProject1 - Copy/InterviewSchedulingProject1/Views/ISP/CandidateSeeTimings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSVNQXENhbmRpZGF0ZVNlZVRpbWluZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Shivam_All_Data/Shivam_Projects/InterviewSchedulingProject1 - Copy/InterviewSchedulingProject1/Views/ISP/EditCandidateProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSVNQXEVkaXRDYW5kaWRhdGVQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Shivam_All_Data/Shivam_Projects/InterviewSchedulingProject1 - Copy/InterviewSchedulingProject1/Views/ISP/HrDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSVNQXEhyRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Shivam_All_Data/Shivam_Projects/InterviewSchedulingProject1 - Copy/InterviewSchedulingProject1/Views/ISP/HrEditCandidate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSVNQXEhyRWRpdENhbmRpZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Shivam_All_Data/Shivam_Projects/InterviewSchedulingProject1 - Copy/InterviewSchedulingProject1/Views/ISP/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSVNQXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Shivam_All_Data/Shivam_Projects/InterviewSchedulingProject1 - Copy/InterviewSchedulingProject1/Views/ISP/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSVNQXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Shivam_All_Data/Shivam_Projects/InterviewSchedulingProject1 - Copy/InterviewSchedulingProject1/Views/ISP/SetInterviewTiming.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSVNQXFNldEludGVydmlld1RpbWluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Shivam_All_Data/Shivam_Projects/InterviewSchedulingProject1 - Copy/InterviewSchedulingProject1/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Shivam_All_Data/Shivam_Projects/InterviewSchedulingProject1 - Copy/InterviewSchedulingProject1/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Shivam_All_Data/Shivam_Projects/InterviewSchedulingProject1 - Copy/InterviewSchedulingProject1/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Shivam_All_Data/Shivam_Projects/InterviewSchedulingProject1 - Copy/InterviewSchedulingProject1/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Shivam_All_Data/Shivam_Projects/InterviewSchedulingProject1 - Copy/InterviewSchedulingProject1/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-5rznlfn2q8
+
+[C:/Shivam_All_Data/Shivam_Projects/InterviewSchedulingProject1 - Copy/InterviewSchedulingProject1/Views/Shared/_LayoutCopy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDb3B5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-xv3nzhnmej

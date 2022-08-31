@@ -1,0 +1,41 @@
+﻿@model InterviewSchedulingProject1.Models.CandidateUser
+
+@{
+    ViewData["Title"] = "CandidateSeeTimings";
+}
+
+<h1>CandidateSeeTimings</h1>
+
+<div>
+    <h4>SaveInterviewTimings</h4>
+    <hr />
+    <dl class="row">
+       @* <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Candidateid)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Candidateid)
+        </dd>*@
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.selected)
+        </dt>
+        <dd class = "col-sm-10">
+           Selected
+        </dd>
+        <dt class = "col-sm-2">
+           Company Name
+        </dt>
+        <dd class = "col-sm-10">
+            @ViewBag.CompanyName
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.InterviewTiming)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.InterviewTiming)
+        </dd>
+    </dl>
+</div>
+<div>
+  <a asp-action="CandidateDashboard">Back to Dashboard</a>
+</div>

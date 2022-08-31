@@ -1,0 +1,54 @@
+﻿@model InterviewSchedulingProject1.Models.SaveInterviewTimings
+
+@{
+    ViewData["Title"] = "SetInterviewTiming";
+}
+
+
+<h4>SaveInterviewTimings</h4>
+<hr />
+<div class="row">
+     
+        <label class="text-danger">@ViewBag.success</label>
+    <div class="col-md-4">
+        <form asp-action="SetInterviewTiming">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Candidateid" class="control-label"></label>
+                <input asp-for="Candidateid" class="form-control" />
+                <span asp-validation-for="Candidateid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="selected" class="control-label"></label>
+                <label class="control-label">selected</label>
+                <input asp-for="selected" type="radio" value="True" />
+                <label class="control-label">Not selected</label>
+                <input asp-for="selected" type="radio" value="Ture" />
+                <br/>
+                <span asp-validation-for="selected" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Company" class="control-label"></label>
+                <input asp-for="Company" class="form-control" />
+                <span asp-validation-for="Company" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InterviewTiming" class="control-label"></label>
+                <input asp-for="InterviewTiming" class="form-control" />
+                <span asp-validation-for="InterviewTiming" class="text-danger"></span>
+            </div>
+               <br/>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="HrDashboard" asp-controller="ISP">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

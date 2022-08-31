@@ -1,0 +1,108 @@
+﻿
+@model InterviewSchedulingProject1.Models.LoginModel
+
+@{
+    ViewData["Title"] = "Login";
+    //Layout = "/Views/Shared/_LayoutCopy.cshtml";
+    Layout = null;
+}
+<head>
+ 
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="~/assets/plugins/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="~/assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="~/assets/dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+
+
+  <div class="card card-danger">
+              <div class="card-header text-center">
+                <h3 class="card-title">Login</h3>
+              </div>
+                      <label class="text-danger">@ViewBag.register</label>
+    <label class="text-danger">@ViewBag.NotFound</label>
+    @if(ViewBag.register!=null){
+  <input value="1" type="hidden" id="registered"/>
+ }
+              <!-- /.card-header -->
+              <!-- form start -->
+         <form method="post" class="form-horizontal" asp-action="Login" asp-controller="ISP">
+                <div class="card-body">
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-4 col-form-label">Username</label>
+                    <div class="col-sm-8">
+                      <input asp-for="username"  class="form-control" id="inputPassword3" placeholder="Username">
+                          <span asp-validation-for="username" class="text-danger"></span>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-4 col-form-label">Password</label>
+                    <div class="col-sm-8">
+                      <input type="password" asp-for="Password"  class="form-control" id="inputPassword3" placeholder="Password">
+                          <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                  </div>
+
+               
+               
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <input type="submit" value="Sign in" class="btn btn-danger"/>
+                  <a  asp-action="Register" asp-controller="ISP"  class="btn btn-default float-right">Register</a>
+                </div>
+                <!-- /.card-footer -->
+              </form>
+            </div>
+
+
+<!-- jQuery -->
+<script src="~/assets/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="~/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="~/assets/dist/js/adminlte.min.js"></script>
+</body>
+</html>
+
+
+<style>
+    .login-page, .register-page {
+ 
+       background-color: #888a8d;
+background-image:url("https://wallpapercave.com/wp/wp2940000.jpg");
+/* background-repeat:no-repeat;
+    background-size:cover;*/
+    }
+
+    .login-box, .register-box {
+    width: 460px;
+}
+/*    .btn-primary {
+
+    background-color: #1f2d3d;
+    border-color: #1f2d3d;*/
+
+}
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script>
+    $( document ).ready(function() {
+    //int register= $("#registered").val();
+    debugger;
+    if($("#registered").val() > 0){
+        alert("Registered Successfully ")
+    }
+    });
+</script>

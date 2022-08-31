@@ -1,0 +1,133 @@
+﻿@model IEnumerable<InterviewSchedulingProject1.Models.getcondidatedetailselected>
+
+@{
+    ViewData["Title"] = "HrDashboard";
+}
+
+<h1>HrDashboard</h1>
+
+     @using (Html.BeginForm("HrDashboard", "ISP", FormMethod.Get))  
+        {  
+            <b> Search by</b> 
+          
+            @Html.TextBox("search") <input type="submit" value=" Search" />  
+        }
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.firstname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.lastname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.phoneno)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DOB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Role)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tenth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.twelth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.graduation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.postgraduation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.skills)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Experince)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Company)
+            </th>
+            <th>
+                Schedule
+            </th> <th>
+               Interview
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.firstname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.lastname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.phoneno)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DOB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Role)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tenth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.twelth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.graduation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.postgraduation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.skills)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Experince)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Company)
+            </td>
+      
+             <td>
+                 <a asp-action="HrEditCandidate" asp-controller="ISP" class="btn btn-primary" asp-route-id="@item.id">Edit</a>  </td>
+            <td>
+                 <a asp-action="SetInterviewTiming" asp-controller="ISP" class="btn btn-primary" asp-route-id="@item.id">STI</a> 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

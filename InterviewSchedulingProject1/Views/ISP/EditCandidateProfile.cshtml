@@ -1,0 +1,166 @@
+﻿@model InterviewSchedulingProject1.Models.CandidateFullDetails
+
+@{
+    ViewData["Title"] = "EditCandidateProfile";
+}
+
+
+
+
+<div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">CandidateFullDetails</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                
+                <form asp-action="EditCandidateProfile">
+                       <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                      <label class="text-danger">@ViewBag.sublit</label>
+                
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                     <label asp-for="firstname" class="control-label"></label>
+                        <input asp-for="firstname"  type="text" class="form-control" placeholder="firstname">
+                        <span asp-validation-for="firstname" class="text-danger"></span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                 <label asp-for="lastname" class="control-label"></label>
+                            <input asp-for="lastname"  type="text" class="form-control" placeholder="lastname">
+                               <span asp-validation-for="lastname" class="text-danger"></span>
+                      </div>
+                    </div>
+                  </div>
+                        <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                     <label asp-for="phoneno" class="control-label"></label>
+                        <input asp-for="phoneno"  type="text" class="form-control" placeholder="phoneno">
+                               <span asp-validation-for="phoneno" class="text-danger"></span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                      <label asp-for="Gender" class="control-label"></label>
+                      <br />
+                 <label class="control-label">Male</label>
+                <input asp-for="Gender" type="radio" value="1" />
+                <label class="control-label">Female</label>
+                <input asp-for="Gender" type="radio" value="2" /><br />
+                <span asp-validation-for="Gender" class="text-danger"></span>
+                        
+                      </div>
+                    </div>
+                  </div>
+                        <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                     <label asp-for="DOB" class="control-label"></label>
+                        <input asp-for="DOB"   class="form-control" placeholder="DOB">
+                       <span asp-validation-for="DOB" class="text-danger"></span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                 <label asp-for="tenth" class="control-label"></label>
+                            <input asp-for="tenth"  type="text" class="form-control" placeholder="tenth">
+                       <span asp-validation-for="tenth" class="text-danger"></span>
+                      </div>
+                    </div>
+                  </div>
+                      <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                     <label asp-for="twelth" class="control-label"></label>
+                        <input asp-for="twelth"  type="text" class="form-control" placeholder="twelth">
+                        <span asp-validation-for="twelth" class="text-danger"></span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                 <label asp-for="graduation" class="control-label"></label>
+                            <input asp-for="graduation"  type="text" class="form-control" placeholder="graduation">
+                        <span asp-validation-for="graduation" class="text-danger"></span>
+                      </div>
+                    </div>
+                  </div>
+                      <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                     <label asp-for="postgraduation" class="control-label"></label>
+                        <input asp-for="postgraduation"  type="text" class="form-control" placeholder="postgraduation">
+                        <span asp-validation-for="postgraduation" class="text-danger"></span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                 <label asp-for="skills" class="control-label"></label>
+                            <input asp-for="skills"  type="text" class="form-control" placeholder="skills">
+                         <span asp-validation-for="skills" class="text-danger"></span>
+                      </div>
+                    </div>
+                  </div>
+                     <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                     <label asp-for="Experince" class="control-label"></label>
+                        <input asp-for="Experince"  type="text" class="form-control" placeholder="Experince">
+                        <span asp-validation-for="Experince" class="text-danger"></span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+              @*   <label asp-for="skills" class="control-label"></label>
+                            <input asp-for="skills"  type="text" class="form-control" placeholder="skills">*@
+                       
+                      </div>
+                    </div>
+                  </div>
+
+                
+
+                     <div class="card-footer">
+                  <input type="submit" value="submit" class="btn btn-primary"/>
+           
+                </div>
+                </form>
+              </div>
+              <!-- /.card-body -->
+            </div>
+
+
+
+
+
+
+
+
+
+
+<div>
+       <a asp-action="CandidateDashboard" asp-controller="ISP">View Profile</a>
+</div>
+
+
+
+<style>
+    .card-primary:not(.card-outline)>.card-header {
+    background-color: #007bff;
+}
+.card-primary:not(.card-outline)>.card-header, .card-primary:not(.card-outline)>.card-header a {
+    color: #fff;
+}
+</style>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
